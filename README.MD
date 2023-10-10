@@ -5,7 +5,7 @@ This is a simple implementation of the Othello game with AI. The AI is based on 
 
 ## How to play
 The game is played in the terminal. The board is displayed as follows:
-![plansza](https://prnt.sc/My3G3VofjBp4)
+https://prnt.sc/My3G3VofjBp4
 
 ## How to run
 Have the latest version of python installed. Install easyai dependency:
