@@ -6,6 +6,9 @@ Precautions:
 - numpy
 - json
 
+The problem this code solves is it recommends movies to a user based on their ratings of other movies.
+We chose to calculate the Euclidean distance between two users based on their movie ratings to calculate the similarity between them.
+
 This script provides a movie recommendation system based on user ratings of movies. It contains a MovieRecommender class
 that can be used to calculate the Euclidean distance between two users based on their movie ratings, and recommend movies
 to a user based on their ratings of other movies.
