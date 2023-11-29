@@ -28,7 +28,7 @@ y = df['diagnosis']
 # Split the dataset into training set and test set
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
 
-# Create a SVM Classifier object
+# Create an SVM Classifier object
 clf = svm.SVC(kernel='linear')
 
 # Train SVM Classifier
