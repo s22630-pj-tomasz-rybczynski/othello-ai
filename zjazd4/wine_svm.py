@@ -1,3 +1,16 @@
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- pandas
+- skcikit-learn
+- matplotlib
+
+The problem this code solves is it trains the model to predict if the breast cancer is diagnosed or not using decision tree classification.
+Link to data model: https://machinelearningmastery.com/standard-machine-learning-datasets/
+"""
+
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
@@ -12,7 +25,7 @@ column_names = ["fixed acidity", "volatile acidity", "citric acid", "residual su
 
 df = pd.read_csv('winequality-white.csv', names=column_names, delimiter=';', skiprows=1)
 
-# Assuming "quality" is the target variable
+# "quality" is the target variable
 X = df.drop('quality', axis=1)
 y = df['quality']
 
