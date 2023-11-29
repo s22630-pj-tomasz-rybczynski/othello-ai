@@ -7,7 +7,8 @@ Precautions:
 - skcikit-learn
 - matplotlib
 
-The problem this code solves is it trains the model to predict if the breast cancer is diagnosed or not using decision tree classification.
+The presented code utilizes a Support Vector Machine (SVM) to analyze the 'winequality-white.csv' dataset,
+which comprises diverse chemical properties characterizing white wines, including acidity levels, residual sugar, and alcohol content.
 Link to data model: https://machinelearningmastery.com/standard-machine-learning-datasets/
 """
 

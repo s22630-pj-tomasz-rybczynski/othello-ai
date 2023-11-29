@@ -7,7 +7,9 @@ Precautions:
 - skcikit-learn
 - matplotlib
 
-The problem this code solves is it trains the model to predict if the breast cancer is diagnosed or not using decision tree classification.
+The provided code employs a Decision Tree Classifier to analyze the 'winequality-white.csv' dataset.
+This dataset encompasses various chemical properties of white wines, such as acidity levels, residual sugar, and alcohol content.
+
 Link to data model: https://machinelearningmastery.com/standard-machine-learning-datasets/
 """
 
