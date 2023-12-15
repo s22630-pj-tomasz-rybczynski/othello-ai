@@ -1,3 +1,14 @@
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- tensorflow
+- matplotlib
+- cv2
+
+"""
+
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import cv2

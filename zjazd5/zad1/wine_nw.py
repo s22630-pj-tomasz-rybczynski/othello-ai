@@ -1,3 +1,16 @@
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- tensorflow
+- matplotlib
+- pandas
+- sklearn
+- os
+
+"""
+
 import pandas as pd
 import os
 import tensorflow as tf

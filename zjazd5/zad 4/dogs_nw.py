@@ -1,6 +1,12 @@
-import os
-import numpy as np
-import tensorflow as tf
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- tensorflow
+
+"""
+
 from tensorflow.keras import layers, models
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 

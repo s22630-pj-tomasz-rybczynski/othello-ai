@@ -1,3 +1,13 @@
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- tensorflow
+- os
+- numpy
+"""
+
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input, decode_predictions

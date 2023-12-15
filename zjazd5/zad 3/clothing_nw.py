@@ -1,3 +1,13 @@
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- tensorflow
+- time
+
+"""
+
 import tensorflow as tf
 import time
 from tensorflow.keras import layers, models

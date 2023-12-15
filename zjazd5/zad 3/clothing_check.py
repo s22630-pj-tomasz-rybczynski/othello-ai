@@ -1,3 +1,13 @@
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- tensorflow
+- numpy
+
+"""
+
 from PIL import Image
 import numpy as np
 from tensorflow.keras.models import load_model

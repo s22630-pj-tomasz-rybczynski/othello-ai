@@ -1,3 +1,15 @@
+"""
+Authors: Tomasz Rybczyński, Filip Marcoń
+
+Precautions:
+- Python 3.8
+- tensorflow
+- numpy
+- time
+- sklearn
+
+"""
+
 import tensorflow as tf
 from sklearn.metrics import confusion_matrix
 from tensorflow.keras import layers, models
