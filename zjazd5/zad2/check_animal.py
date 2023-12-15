@@ -31,7 +31,7 @@ def preprocess_image(image_path, target_size=(32, 32)):
 model = load_model('my_model_20231207_004700.keras')
 
 # Load and preprocess a new image for prediction
-image_path = 'deer.jpg'
+image_path = 'truck.jpg'
 img = preprocess_image(image_path)
 
 # Make predictions

@@ -26,7 +26,7 @@ def preprocess_image(image_path):
     return img_array
 
 # Specify the path to the test photo
-test_photo_path = 'tshirt.jpg'
+test_photo_path = 'pullover.jpg'
 
 # Preprocess the test photo
 test_image = preprocess_image(test_photo_path)
