@@ -1,10 +1,12 @@
 import tensorflow as tf
+from sklearn.metrics import confusion_matrix
 from tensorflow.keras import layers, models
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import LearningRateScheduler, EarlyStopping
 import time
+import numpy as np
 
 # Load and preprocess the CIFAR-10 dataset
 (train_images, train_labels), (test_images, test_labels) = cifar10.load_data()
@@ -51,13 +53,19 @@ early_stop = EarlyStopping(monitor='val_loss', patience=10)
 
 # Train the model
 history = model.fit(datagen.flow(train_images, train_labels, batch_size=32),
-                    epochs=50,
+                    epochs=10,
                     validation_data=(test_images, test_labels),
                     callbacks=[lr_schedule, early_stop])
 
 # Evaluate the model on the test set
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 print(f'Test accuracy: {test_acc}')
+
+y_true = np.argmax(test_labels, axis=1)
+y_pred = np.argmax(model.predict(test_images), axis=1)
+conf_matrix = confusion_matrix(y_true, y_pred)
+print("Confusion Matrix:")
+print(conf_matrix)
 
 # Save the model
 timestamp = time.strftime("%Y%m%d_%H%M%S")

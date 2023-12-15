@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
+import matplotlib.pyplot as plt
 
 
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
@@ -42,5 +43,12 @@ print(f"Mean Absolute Error on Test Set: {mae}")
 
 # Make predictions
 predictions = model.predict(X_test)
+print("Actual   Predicted")
+for actual, predicted in zip(y_test[:10], predictions[:10]):
+    print(f"{actual}       {predicted[0]}")
 
-# You can use predictions for further analysis or evaluation
+plt.scatter(y_test, predictions)
+plt.xlabel("Actual Values")
+plt.ylabel("Predicted Values")
+plt.title("Actual vs Predicted Values")
+plt.show()
