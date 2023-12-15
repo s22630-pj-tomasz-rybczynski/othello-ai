@@ -9,6 +9,7 @@ Precautions:
 - sklearn
 - os
 
+Create model to guess wine quality
 """
 
 import pandas as pd

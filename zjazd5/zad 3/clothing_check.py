@@ -6,6 +6,7 @@ Precautions:
 - tensorflow
 - numpy
 
+Test model from clothing_nw
 """
 
 from PIL import Image

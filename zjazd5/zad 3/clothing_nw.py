@@ -6,6 +6,7 @@ Precautions:
 - tensorflow
 - time
 
+Create model to recognise cloths
 """
 
 import tensorflow as tf

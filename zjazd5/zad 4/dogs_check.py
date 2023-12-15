@@ -6,6 +6,8 @@ Precautions:
 - tensorflow
 - os
 - numpy
+
+Test dogs_check model
 """
 
 import tensorflow as tf

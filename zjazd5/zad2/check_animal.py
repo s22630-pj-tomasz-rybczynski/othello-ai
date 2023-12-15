@@ -7,6 +7,7 @@ Precautions:
 - matplotlib
 - cv2
 
+File to test model from animals_nw.py
 """
 
 import tensorflow as tf

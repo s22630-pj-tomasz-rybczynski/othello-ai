@@ -5,6 +5,8 @@ Precautions:
 - Python 3.8
 - tensorflow
 
+
+Create model to recognise dog breed based on photo
 """
 
 from tensorflow.keras import layers, models

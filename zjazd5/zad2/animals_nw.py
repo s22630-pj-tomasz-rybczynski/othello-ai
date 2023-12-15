@@ -8,6 +8,7 @@ Precautions:
 - time
 - sklearn
 
+create model for animals image recognition
 """
 
 import tensorflow as tf
